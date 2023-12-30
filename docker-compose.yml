@@ -10,7 +10,7 @@ services:
       MYSQL_HOST: mysql
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin
-      MYSQL_DB: mysql-DB
+      MYSQL_DB: myDb
     depends_on:
       - mysql
 
@@ -20,7 +20,7 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: mysql-DB
+      MYSQL_DATABASE: myDb
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin
     volumes:
